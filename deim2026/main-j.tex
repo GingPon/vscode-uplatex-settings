@@ -22,41 +22,37 @@
 \def\BibTeX{{\rmfamily B\kern-.05em{\scshape i\kern-.025em b}\kern-.08em
  T\kern-.1667em\lower.7ex\hbox{E}\kern-.125em X}}
 
-\jtitle{DEIM Forum Class File}
+\jtitle{F1レースの状況・環境指標を用いた時系列相関量計量による \\ 戦略的タイヤ交換タイミングの提案}
 % \jsubtitle{サブタイトル} % サブタイトルを付けたいときはこの行の先頭の % を取る
 \authorlist{%
- \authorentry[nishinosono@steng.n-univ.ac.jp]{西之園 萌絵}{Moe Nishinosono}{UnivN}% 
- \authorentry[saikawa@eng.n-univ.ac.jp]{犀川 創平}{Sohei Saikawa}{UnivN}% 
- \authorentry[kunieda@eng.n-univ.ac.jp]{国枝 桃子}{Momoko Kunieda}{UnivN}% 
- \authorentry[magata@magata-lab.co.jp]{真賀田 四季}{Shiki Magata}{Mlab}% 
+ \authorentry{坂野 心咲}{Misaki Sakano}{MU}
+ \authorentry{林 康弘}{Yasuhiro Hayashi}{MU} 
+ \authorentry{清木 康}{Yasushi Kiyoki}{MU}
 }
-\affiliate[UnivN]{N大学工学部建築学科\hskip1zw
-  〒464--8603 愛知県名古屋市千種区不老町}
- {School of Engineering, N University,
-  Furo-cho, Chikusa-ku, Nagoya-shi, Aichi 464--8603, Japan}
-\affiliate[Mlab]{真賀田研究所\hskip1zw
-  〒444--0416 愛知県西尾市一色町妃真加島1番1号}
- {Magata Laboratory,
-  1--1 Himakajima, Isshiki-cho, Nishio-shi, Aichi 444--0416, Japan}
+
+\affiliate[MU]{武蔵野大学 データサイエンス学科\hskip1zw
+  〒135--8181 東京都江東区有明 3--3--3}
+ {Department of Data Science, Musashino University\\
+  Ariake, Koto-ku, Tokyo 135--8181, Japan}
 
 % 同一組織で、複数のメールアドレスのドメインがある場合、
 % ダガーがずれてしまう。
 % その場合、以下のコメントアウトを解除すると、
 % 自由にダガーを設定可能であることが分かる。
-% \MailAddress{$\dagger$ nishinosono@steng.n-univ.ac.jp,
-% \{saikawa,kunieda\}@eng.n-univ.ac.jp,
-% $\dagger\dagger$magata@magata-lab.co.jp
-% }
+\MailAddress{$\dagger$ s2122084@stu.musashino-u.ac.jp,
+\{yhayashi, y-kiyoki\}@musashino-u.ac.jp
+}
+
 
 \begin{document}
 \pagestyle{empty}
 
 \begin{jabstract}
-DEIM Forum 論文フォーマット．
+Formula1(F1)のレース戦略の重要な要素の１つは，タイヤ戦略にある．ストラテジストの形式知・暗黙知を反映した知識ベースの構築とその効果的な活用によって，特定の専門家の経験値のみに依存することなく， F1レースタイヤ戦略の最適解を導出することは重要な課題となっている．本研究は、F1を対象として，レースの状況・環境に関する指標を対象とした時系列相関量計量によるタイヤ戦略構築支援方式を提案する．本方式の特徴は，レースに勝つための最適な戦略を，過去の成功事例から導くため，レースデータをデータベース化し，時系列相関量計量によって現在の事象に対して過去の類似する事象を発見する点にある．これにより， 状況・環境が類似する過去の成功事例（周回単位）をもとに最適と考えらえるタイヤ戦略支援の実現を目指す．本研究の実現システムとして，実際のF1データを用いて専門家の知識ベース・過去成功事例データベースを構築し，Pythonを用いた実験システムを実装した．この実験システムにより，過去成功事例を反映した最適なタイヤ戦略の提案を実現でき，本方式の実現可能性を検証した
 \end{jabstract}
 
 \begin{jkeyword}
-DEIM，フォーマット，論文執筆の注意事項
+時系列相関量計量、F1レースデータベース、戦略的タイヤ交換タイミング、過去との類似性、成功事例検索
 \end{jkeyword}
 
 \maketitle

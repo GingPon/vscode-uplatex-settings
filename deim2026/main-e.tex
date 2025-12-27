@@ -1,0 +1,97 @@
+\documentclass{deime}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% 必要に応じてパッケージを導入して下さい。
+%\usepackage[dvipdfm]{graphicx}
+%\usepackage{latexsym}
+%\usepackage{txfonts}
+%\usepackage[fleqn]{amsmath}
+%\usepackage[psamsfonts]{amssymb}
+%\usepackage[deluxe]{otf}
+
+% 印刷位置調整 %
+% 必要に応じて値を変更してください．
+\hoffset -10mm % <-- 左に 10mm 移動
+\voffset -10mm % <-- 上に 10mm 移動
+
+\newcommand{\AmSLaTeX}{%
+ $\mathcal A$\lower.4ex\hbox{$\!\mathcal M\!$}$\mathcal S$-\LaTeX}
+\newcommand{\PS}{{\scshape Post\-Script}}
+\def\BibTeX{{\rmfamily B\kern-.05em{\scshape i\kern-.025em b}\kern-.08em
+ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125em X}}
+
+\etitle{DEIM Forum Class File }
+%\esubtitle{Subtitle} <- uncomment if you need subtitle.
+\authorlist{%
+ \authorentry[nishinosono@steng.n-univ.ac.jp]{西之園 萌絵}{Moe Nishinosono}{UnivN}% 
+ \authorentry[saikawa@eng.n-univ.ac.jp]{犀川 創平}{Sohei Saikawa}{UnivN}% 
+ \authorentry[kunieda@eng.n-univ.ac.jp]{国枝 桃子}{Momoko Kunieda}{UnivN}% 
+ \authorentry[magata@magata-lab.co.jp]{真賀田 四季}{Shiki Magata}{Mlab}% 
+}
+\affiliate[UnivN]{N大学工学部建築学科\hskip1zw
+  〒464--8603 愛知県名古屋市千種区不老町}
+ {School of Engineering, N University,
+  Furo-cho, Chikusa-ku, Nagoya-shi, Aichi 464--8603, Japan}
+\affiliate[Mlab]{真賀田研究所\hskip1zw
+  〒444--0416 愛知県西尾市一色町妃真加島1番1号}
+ {Magata Laboratory,
+  1--1 Himakajima, Isshiki-cho, Nishio-shi, Aichi 444--0416, Japan}
+
+% 同一組織で、複数のメールアドレスのドメインがある場合、
+% ダガーがずれてしまう。
+% その場合、以下のコメントアウトを解除すると、
+% 自由にダガーを設定可能であることが分かる。
+% \MailAddress{$\dagger$ nishinosono@steng.n-univ.ac.jp,
+% \{saikawa,kunieda\}@eng.n-univ.ac.jp,
+% $\dagger\dagger$magata@magata-lab.co.jp
+% }
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{eabstract}
+Paper format for DEIM Forum Proceedings.
+\end{eabstract}
+
+\begin{ekeyword}
+DEIM, format, Guidelines for Writing a Research Paper
+\end{ekeyword}
+
+\maketitle
+
+\section{Top page format}
+
+At the top of the first page, please include the title and information about all authors, namely their names, affiliations, addresses, and email addresses, must be included. 
+Additionally, an abstract of approximately 100 words and a list of keywords must be provided. 
+There is no need for the authors to specify the article number.
+
+\section{The number of pages}
+
+Short papers should be no less than 2 pages and about 4 pages in length. 
+Long papers should be no less than 4 pages and about 8 pages in length.
+
+\section{Paper style}
+
+Paper must be styled as A4, 9-point font, double-columned, and single spacing. 
+Please list the references at the end of the paper~\cite{Codd1970}.
+
+% \section*{Acknowledgements}
+% Acknowledgments may be included here.
+
+%\vspace{30mm} <- Use if the body is too close to the references.
+\vspace{2em}
+
+\begin{thebibliography}{99}
+\bibitem{Codd1970}
+  E. F. Codd, 
+  ``A Relational Model of Data for Large Shared Data Banks,''
+  Communications of the {ACM} (CACM), Vol. 13, No. 6, pp. 377--387, 1970.
+\end{thebibliography}
+
+% In case you use bibtex.
+% \bibliographystyle{plain}
+% \bibliography{reference}
+
+\end{document}

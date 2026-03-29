@@ -1,5 +1,5 @@
 {
-  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
